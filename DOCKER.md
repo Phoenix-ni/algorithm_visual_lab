@@ -85,11 +85,14 @@ docker compose up -d --build
 Render 不使用本地 `docker-compose.yml` 编排容器。项目额外提供了 Render 专用的单容器配置：
 
 ```text
+Dockerfile
 Dockerfile.render
 render.yaml
 render/start.sh
 render/nginx.conf.template
 ```
+
+`Dockerfile` 和 `Dockerfile.render` 作用相同；保留 `Dockerfile.render` 是为了说明这是 Render 单容器部署方案，根目录 `Dockerfile` 用来兼容 Render 或本地 Docker 的默认构建行为。
 
 这个容器会在一个 Render Web Service 中同时运行：
 
@@ -118,6 +121,8 @@ Dockerfile Path: ./Dockerfile.render
 Docker Context: .
 Health Check Path: /api/health
 ```
+
+如果页面里没有填写 Dockerfile Path 的地方，保留默认 `Dockerfile` 即可。
 
 如果仓库根目录是 `lesson_design`，手动创建 Web Service 时建议设置：
 

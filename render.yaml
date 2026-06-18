@@ -2,7 +2,7 @@ services:
   - type: web
     name: algorithm-visual-lab
     runtime: docker
-    dockerfilePath: ./Dockerfile.render
+    dockerfilePath: ./Dockerfile
     dockerContext: .
     healthCheckPath: /api/health
     envVars:
