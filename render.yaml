@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: algorithm-visual-lab
+    runtime: docker
+    dockerfilePath: ./Dockerfile.render
+    dockerContext: .
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: PYPI_INDEX_URL
+        value: https://pypi.org/simple
+      - key: TORCH_INDEX_URL
+        value: https://download.pytorch.org/whl/cpu

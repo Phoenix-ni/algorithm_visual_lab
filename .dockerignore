@@ -1,0 +1,12 @@
+**/.git
+**/.pytest_cache
+**/__pycache__
+**/*.pyc
+**/node_modules
+**/dist
+**/.vite
+backend/data/custom_data.json
+backend/data/mnist
+backend-server.log
+frontend-server.log
+*.log
