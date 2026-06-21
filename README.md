@@ -1,6 +1,14 @@
 # 算法过程可视化实验平台
 
-本项目根据上级目录中的《算法过程可视化系统需求分析报告》和旧版纯前端 Demo 实现。成品项目已独立放在 `algorithm_visual_lab` 目录中，和需求文档、旧 Demo 文件分开。
+本项目根据上级目录中的《算法过程可视化系统需求分析报告》和旧版纯前端 Demo 进行全面重构与实现。将算法教学以直观的动态步骤可视化流程呈现，极大降低了数据结构与算法的学习门槛。
+
+## 🌐 在线体验
+
+本项目已部署至公网，欢迎点击下方链接在线体验：
+
+👉 **[算法过程可视化实验平台 (Online Live)](https://algorithm-visual-lab.onrender.com)**
+
+*(注：因部署在 Render 免费实例上，若首次访问加载较慢，可能是容器正在从休眠中唤醒，请等待 1-2 分钟。)*
 
 ## 技术栈
 
@@ -75,7 +83,9 @@ npm install
 
 ## 启动项目
 
-Docker 打包和 Render 部署方式见 [DOCKER.md](./DOCKER.md)。
+Docker 打包和 Render 部署方式见 [DOCKER.md](./DOCKER.md)。公网部署版本可直接通过 **[在线体验链接](https://algorithm-visual-lab.onrender.com)** 访问。
+
+本地开发启动方式如下：
 
 启动后端：
 
